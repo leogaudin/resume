@@ -1,23 +1,16 @@
-# Makefile for building resume.pdf and copying to React public folder
+all: generate pdf copy
 
-# Paths
-RESUME_SRC := resume.tex
-RESUME_PDF := resume.pdf
-REACT_PUBLIC := ../gaudin/public
+generate:
+	node generate.js
 
-# Default target
-all: build copy
+pdf:
+	pdflatex -output-directory=dist dist/resume.tex
 
-# Compile the PDF in the current directory
-build:
-	pdflatex $(RESUME_SRC)
+copy:
+	cp dist/resume.html ../gaudin/index.html
+	cp dist/resume.pdf ./resume.pdf
 
-# Copy the PDF to the React public folder
-copy: build
-	cp $(RESUME_PDF) $(REACT_PUBLIC)/
-
-# Clean auxiliary TeX files
 clean:
-	rm -f *.aux *.log *.out *.toc
+	rm -f dist/*.aux dist/*.log dist/*.out dist/*.toc
 
-.PHONY: all build copy clean
+.PHONY: all generate pdf copy clean

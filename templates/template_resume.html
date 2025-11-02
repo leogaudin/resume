@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
+  <title>Gaudin</title>
+  <meta charset="UTF-8">
+  <style>
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      body {
+        font-size: 14pt;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      body {
+        font-size: 14pt;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      body {
+        font-size: 11pt;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      body {
+        font-size: 8pt;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+      body {
+        font-size: 9.5pt;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0;
+      }
+    }
+
+    @media only screen and (min-device-width: 1200px) {
+      body {
+        font-size: 10pt;
+        margin: 0 4em;
+      }
+
+      div.content {
+        width: 96ex;
+        margin: 0;
+      }
+    }
+
+    @media print {
+      body {
+        font-family: monospace;
+        font-size: 10.5pt;
+      }
+
+      a:link,
+      a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .noprint {
+        display: none;
+      }
+    }
+
+    strong {
+      font-size: 1.125em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>{{name}}</h1>
+  <p>
+    <a href="mailto:{{email}}">{{email}}</a> |
+    <a href="{{links.linkedin}}">{{links.linkedin}}</a> |
+    <a href="{{links.github}}">{{links.github}}</a>
+  </p>
+
+  <h2>Education</h2>
+  {{education}}
+
+  <h2>Experience</h2>
+  {{experience}}
+
+  <h2>Projects</h2>
+  {{projects}}
+
+  <h2>Technical Skills</h2>
+  <ul>
+    {{skills_block}}
+  </ul>
+
+  <h2>Other</h2>
+  <ul>
+    {{other_block}}
+  </ul>
+
+</body>
+
+</html>
