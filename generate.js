@@ -92,7 +92,8 @@ const htmlExp = e => `
 
 const htmlProj = e => `
 <p>
-  <strong>${e.name}</strong> (${e.dates})
+  <strong>${e.name}</strong><br />
+  <small>(${e.dates})</small>
   <ul>${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
 </p>
 `;
