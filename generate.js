@@ -22,7 +22,7 @@ const htmlKeyValueList = obj =>
     .map(([key, value]) => {
       const title =
         key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
-      return `<li><b>${title}:</b> ${value}</li>`;
+      return `<span><b>${title}:</b> ${value}</span><br/>`;
     })
     .join('');
 
