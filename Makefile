@@ -8,7 +8,7 @@ pdf:
 
 copy:
 	cp dist/resume.html ../gaudin/index.html
-	cp dist/resume.pdf ./resume.pdf
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinted=false -sOutputFile=resume.pdf ./dist/resume.pdf
 
 clean:
 	rm -f dist/*.aux dist/*.log dist/*.out dist/*.toc
