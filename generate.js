@@ -112,8 +112,8 @@ const vars = {
   education: resume.education.map(texEdu).join('\n'),
   experience: resume.experience.map(texExp).join('\n'),
   projects: resume.projects.map(texProj).join('\n'),
-  skills_block: texKeyValueList(resume.skills),
-  other_block: texKeyValueList(resume.other),
+  skills: texKeyValueList(resume.skills),
+  other: texKeyValueList(resume.other),
 };
 
 const varsHTML = {
@@ -121,8 +121,8 @@ const varsHTML = {
   education: resume.education.map(htmlEdu).join('\n'),
   experience: resume.experience.map(htmlExp).join('\n'),
   projects: resume.projects.map(htmlProj).join('\n'),
-  skills_block: htmlKeyValueList(resume.skills),
-  other_block: htmlKeyValueList(resume.other),
+  skills: htmlKeyValueList(resume.skills),
+  other: htmlKeyValueList(resume.other),
 };
 
 //
