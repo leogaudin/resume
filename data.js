@@ -31,7 +31,7 @@ export const resume = {
             location: "Madrid, Spain",
             company: "Amazon",
             dates: "Apr. 2025 — Present",
-            bullets: ["EU Tools and Machine Learning (Tamale) team."],
+            bullets: ["EUIC org, Tools and Machine Learning (Tamale) team"],
         },
         {
             role: "Consultant in Software Engineering",
@@ -91,12 +91,12 @@ export const resume = {
         languages: "C/C++, Rust, JavaScript, TypeScript, Python, PHP, SQL, x86 Assembly",
         frameworks: "React, React Native, Express",
         tools: "Git, Docker, Vercel, MongoDB, AWS",
-        knowledge:
+        "valuable knowledge":
             "Full-Stack Development, Product Management, Systems Programming, Linear Algebra",
     },
 
     other: {
         languages: "French, Spanish, English",
-        learning: "ML, Neural Networks, Data Science",
+        "learning objectives": "ML, Neural Networks, Data Science",
     },
 };
